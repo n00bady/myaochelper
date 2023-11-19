@@ -8,7 +8,7 @@ import (
 )
 
 // Takes a file and returns a slice with all the runes
-func parse_runes(f *os.File) []rune {
+func Parse_Runes(f *os.File) []rune {
 	var chars []rune
 
 	reader := bufio.NewReader(f)
@@ -28,7 +28,7 @@ func parse_runes(f *os.File) []rune {
 }
 
 // Takes a file and returns a slice of strings with all the lines
-func parse_lines(f *os.File) []string {
+func Parse_Lines(f *os.File) []string {
 	var lines []string
 	scanner := bufio.NewScanner(f)
 	scanner.Split(bufio.ScanLines)
