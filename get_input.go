@@ -12,7 +12,5 @@ func Read_Text_Input(filename string) *os.File {
 		fmt.Println("File reading error: ", err)
 		os.Exit(1)
 	}
-	defer f.Close()
-
 	return f
 }
