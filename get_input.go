@@ -7,7 +7,7 @@ import (
 
 // get the filename as a string and open the text file
 func Read_Text_Input(filename string) *os.File {
-	f, err := os.Open("./input.txt")
+	f, err := os.Open(filename)
 	if err != nil {
 		fmt.Println("File reading error: ", err)
 		os.Exit(1)
